@@ -1,0 +1,9 @@
+name = "salesman"
+type = "webpack"
+route = ''
+zone_id = ''
+usage_model = ''
+workers_dev = true
+[site]
+bucket = "./static"
+entry-point = "index.html"

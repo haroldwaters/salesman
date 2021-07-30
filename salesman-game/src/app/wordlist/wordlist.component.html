@@ -1,0 +1,6 @@
+<mat-selection-list (selectionChange)="wordSelected($event)">
+    <mat-list-option *ngFor="let word of displayedWords" checkboxPosition='before' value={{word.content}}>
+        {{word.content}}
+    </mat-list-option>
+</mat-selection-list>
+<button (click)="discardWords()" mat-raised-button color="primary">Discard</button>

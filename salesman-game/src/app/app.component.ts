@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 
+export type ViewType = 'buyer' | 'seller'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'salesman-game';
+  public title: string = 'salesman-game';
+  public viewType: ViewType = 'seller';
+
+  public setType(viewType?: ViewType) {
+    if (viewType) {
+      this.viewType = viewType;
+    }
+  }
 }
