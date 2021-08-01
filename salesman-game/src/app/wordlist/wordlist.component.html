@@ -3,4 +3,4 @@
         {{word.content}}
     </mat-list-option>
 </mat-selection-list>
-<button (click)="discardWords()" mat-raised-button color="primary">Discard</button>
+<button (click)="discardWords()" mat-raised-button color="primary" [disabled]="canDiscard()">Discard</button>

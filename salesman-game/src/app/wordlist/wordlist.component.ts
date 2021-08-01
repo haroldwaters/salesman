@@ -34,6 +34,11 @@ export class WordlistComponent implements OnInit {
     }
   }
 
+  public canDiscard() {
+    console.log(this.selectedWords.length)
+    return this.selectedWords.length !== 2;
+  }
+
   public discardWords() {
     if (this.selectionList != null) {
       const selectedWords = this.selectionList
@@ -47,6 +52,7 @@ export class WordlistComponent implements OnInit {
 
       this.displayedWords = this.displayedWords
         .filter(w => !selectedWords.includes(w.content))
+      this.selectedWords = [];
     }
     this.loadWords()
   }
