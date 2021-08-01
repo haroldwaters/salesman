@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { BuyerModule } from './buyer/buyer.module';
 import { SellerModule } from './seller/seller.module';
 import { ScoreCounterComponent } from './score-counter/score-counter.component';
- import {MatIconModule} from '@angular/material/icon'; 
+import {MatIconModule} from '@angular/material/icon'; 
 import {MatButtonModule} from '@angular/material/button';
-
+import { HelpModalComponent } from './help-modal/help-modal.component';
+ import {MatDialogModule} from '@angular/material/dialog'; 
 @NgModule({
   declarations: [
     AppComponent,
+    HelpModalComponent,
     ScoreCounterComponent,
   ],
   imports: [
@@ -25,6 +27,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
+    MatDialogModule,
     MatIconModule,
     MatListModule,
     MatToolbarModule,
