@@ -1,0 +1,4 @@
+mat-toolbar {
+    border: 5px solid red;
+    justify-content: space-between;
+}
