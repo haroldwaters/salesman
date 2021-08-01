@@ -1,7 +1,7 @@
 <div className='game-container'>
   <mat-toolbar >
     <span>Salesman</span>
-    <mat-button-toggle-group className='player-buttons' (change)="setType($event.value)" class=type-toggler name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle-group (change)="setType($event.value)" class=type-toggler name="fontStyle" aria-label="Font Style">
       <mat-button-toggle value="buyer">Buyer</mat-button-toggle>
       <mat-button-toggle value="seller">Seller</mat-button-toggle>
     </mat-button-toggle-group>
