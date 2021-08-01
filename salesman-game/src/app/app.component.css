@@ -1,4 +1,12 @@
-mat-toolbar {
-    border: 5px solid red;
+.mat-toolbar {
     justify-content: space-between;
+}
+
+.mat-button-toggle{
+    background-color: #B2B2B2;
+    color: #ffffff;
+}
+.mat-button-toggle-checked {
+    background-color: #48A808;
+    color: #ffffff;
 }
