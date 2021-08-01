@@ -35,7 +35,6 @@ export class WordlistComponent implements OnInit {
   }
 
   public canDiscard() {
-    console.log(this.selectedWords.length)
     return this.selectedWords.length !== 2;
   }
 
